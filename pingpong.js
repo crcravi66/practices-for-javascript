@@ -15,8 +15,10 @@ btn1.addEventListener('click', function(){
         p1score += 1;
         if (p1score === winningScore){
             isGameover = true;
-            p1display.classList.add('winner');
-            p2display.classList.add('loser');
+            p1display.classList.add('has-text-primary');
+            p2display.classList.add('has-text-danger');
+            btn1.disabled = true;
+            btn2.disabled = true;
         }
     p1display.textContent = p1score;
     }   
@@ -27,8 +29,10 @@ btn2.addEventListener('click', function(){
         p2score += 1;
         if (p2score === winningScore){
             isGameover = true;
-            p2display.classList.add('winner');
-            p1display.classList.add('loser');
+            p2display.classList.add('has-text-primary');
+            p1display.classList.add('has-text-danger');
+            btn1.disabled = true;
+            btn2.disabled = true;
         }
      p2display.textContent = p2score;   
     }
@@ -46,6 +50,8 @@ winningScoreselect.addEventListener('change', function() {
     p2score = 0;
     p1display.textContent = p1score;
     p2display.textContent = p2score;
-    p1display.classList.remove('winner', 'loser')
-    p2display.classList.remove('winner', 'loser')
+    p1display.classList.remove('has-text-primary', 'has-text-danger')
+    p2display.classList.remove('has-text-primary', 'has-text-danger')
+    btn1.disabled = false;
+    btn2.disabled = false;
   }
