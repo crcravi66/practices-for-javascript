@@ -33,3 +33,19 @@ btn2.addEventListener('click', function(){
      p2display.textContent = p2score;   
     }
 })
+winningScoreselect.addEventListener('change', function() {
+    winningScore = parseInt(this.value);  
+    reset();
+  })
+  
+  resetbtn.addEventListener('click', reset)
+  
+  function reset() {
+    isGameover = false;
+    p1score = 0;
+    p2score = 0;
+    p1display.textContent = p1score;
+    p2display.textContent = p2score;
+    p1display.classList.remove('winner', 'loser')
+    p2display.classList.remove('winner', 'loser')
+  }
