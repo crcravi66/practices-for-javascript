@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PingPong</title>
     <link rel="stylesheet" href="pingpong.css">
+    <style>
+        .winner{
+            color: green;
+        }
+        .loser{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <section class="container" >
@@ -16,7 +24,7 @@
         </header>
     </div>
     <div class="card-section">
-        <h1>0 to 0</h1>
+        <h1><span id="p1dispalay">0</span> to <span id="p2dispalay">0</span></h1>
         <p>Use the button below to keep score</p>
         <label for="Playing-To" class="label-is is-inline">Playing To</label>
         <div class="select is-rounded">
@@ -38,13 +46,11 @@
         <button id="p2Button" class="is-info button card-footer-item is-large">+1 Player Two</button>
         <button id="reset" class="is-danger button card-footer-item is-large">Reset</button>
     </footer>
-
-
-    </section>
+</section>
     
 
 
 
-
+<script src="pingpong.js"></script>
 </body>
 </html>
