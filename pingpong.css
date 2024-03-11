@@ -1,0 +1,172 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 30px;
+}
+
+
+.container{
+    width: 610px;
+    min-width: 500px;
+    color: rgb(58, 54, 54);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.48);
+}
+
+.container img{
+    width: 100%;
+    height: 290px;
+}
+.img-shadow{
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.28);
+}
+.container header{
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: large;
+    height: 40px;
+    padding-top: 10px;
+    
+}
+                    /*Card section*/
+    
+.card-section{
+    padding: 20px 30px;
+}
+.card-section h1{
+    font:500 3.5rem Verdana;
+    margin: auto;
+}
+.card-section p{
+    font:400 1.2rem Verdana;
+    margin: 10px 0 25px 0; 
+}
+.label-is{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.is-inline {
+    display: inline !important;
+}
+.select {
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    vertical-align: top;
+}
+.select select:not([multiple]) {
+    padding-right: 2.5em;
+}
+.select.is-rounded select {
+    border-radius: 290486px;
+    padding-left: 1em;
+}
+.select select {
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    max-width: 100%;
+    outline: 0;
+}
+
+.select select:not([multiple]) {
+    padding-right: 1rem;
+}
+.is-rounded select {
+    border-radius: 290486px;
+    padding-left: 1em;
+    height: 2rem;
+}
+.select select {
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    max-width: 100%;
+    outline: 0;
+}
+.input, .select select, .textarea {
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-radius: 4px;
+    color: #363636;
+}
+                /* Card footer section*/
+.card-footer {
+    background-color: transparent;
+    border-top: 1px solid #ededed;
+    align-items: stretch;
+    display: flex;
+}
+.card-footer-item {
+    align-items: center;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: center;
+    padding: 0.75rem;
+}
+.button {
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(0.5em - 1px);
+    text-align: center;
+    white-space: nowrap;
+}
+.button.is-large {
+    font-size: 1.5rem;
+}
+.card-footer-item:not(:last-child) {
+    border-right: 1px solid #ededed;
+}
+.button.is-hovered, .button:hover {
+    border-color: #b5b5b5;
+    color: #363636;
+}
+
+.button.is-primary.is-hovered, .button.is-primary:hover {
+    background-color: #00c4a7;
+    border-color: transparent;
+    color: #fff;
+}
+/*.button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.5em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.75em - 1px);
+    padding-right: calc(0.75em - 1px);
+    padding-top: calc(0.5em - 1px);
+    position: relative;
+    vertical-align: top;
+}*/
+.button.is-primary {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+}
+.button.is-info {
+    background-color: #3298dc;
+    border-color: transparent;
+    color: #fff;
+}
+.button.is-danger {
+    background-color: #f14668;
+    border-color: transparent;
+    color: #fff;
+}
