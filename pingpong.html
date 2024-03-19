@@ -4,47 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PingPong</title>
-    <link rel="stylesheet" href="pingpong.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="pingpong.css"> -->
+   
 </head>
 <body>
-    <section class="container" >
-    <div class="img-shadow">
-        <div>
-            <img src="assets/pingpong.jpg" alt="">
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <figure class="image is-2by1">
+                            <img src="assets/pingpong.jpg" alt="">
+                        </figure>
+                        <header class="card-header">
+                        <p class="card-header-title">
+                            Ping Pong Score Keeper
+                        </p>  
+                        </header>
+                        <div class="card-content">
+                        <div class="content">
+                            <h1  class="title is-1"><span id="p1dispalay">0</span> to <span id="p2dispalay">0</span></h1>
+                            <p class="subtitle">Use the button below to keep score</p>
+                            <label for="Playing-To" class="label is-large is-inline">Playing To</label>
+                            <div class="select is-rounded">
+                                <select name="" id="Playing-To">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>   
+                            </div>
+                        </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1Button" class="button is-primary is-large card-footer-item">+1 Player One</button>
+                            <button id="p2Button" class="button is-info is-large card-footer-item">+1 Player Two</button>
+                            <button id="reset" class="button is-danger is-large card-footer-item">Reset</button>
+                        </footer>
+                    </div> 
+                </div>
+            </div>
         </div>
-        <header >Ping Pong Score Keeper
-        </header>
-    </div>
-    <div class="card-section">
-        <h1>0 to 0</h1>
-        <p>Use the button below to keep score</p>
-        <label for="Playing-To" class="label-is is-inline">Playing To</label>
-        <div class="select is-rounded">
-            <select name="" id="Playing-To">
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-            </select>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <button id="p1Button" class="is-primary button card-footer-item is-large">+1 Player One</button>
-        <button id="p2Button" class="is-info button card-footer-item is-large">+1 Player Two</button>
-        <button id="reset" class="is-danger button card-footer-item is-large">Reset</button>
-    </footer>
-
-
-    </section>
-    
+    </section>    
 
 
 
 
-</body>
-</html>
+    <script src="pingpong.js">
+        
+    </script>
+    </body>
+    </html>
